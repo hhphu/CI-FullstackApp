@@ -10,35 +10,7 @@ Suppose you are working for a small start-up, Uda-Crafts, that sells handmade cr
 
 To ensure quality and avoid deployment of broken code, you have been asked to implement a CI pipeline using GitHub Actions that will automatically build, test, and lint (code quality check) the application whenever changes are pushed to the main branch.
 
-Follow the steps below to complete the exercise:
-
-## Part 1: The Application Files
-
-The initial application-related files and folders are available in the Lesson Workspace in the `lesson-3-exercise/CI-FullstackApp`directory.
-
-* **Create a new repository using your GitHub account - **
-You can name this repository "CI-FullstackApp".
-* **Create a new repository on the command line - **
-From the Lesson Workspace terminal, navigate to the `CI-FullstackApp` root directory : 
-
-```undefined
-cd */CI-FullstackApp
-```
-
-From the `CI-FullstackApp`directory, execute the following set of bash commands:
-
-```
-git init
-git add .
-git commit -m "First Commit"
-git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/CI-FullstackApp.git
-git push -u origin main
-```
-
-**Important:** To paste code in the Lesson Workspace, use Shift + Command + V for a Mac or Shift + Control + V for a Windows.
-
-## Part 2: Execute a GitHub Actions Workflow
+## Execute a GitHub Actions Workflow
 
 * **Create a GitHub Actions workflow file:**
 * Provide a descriptive name for the workflow.
