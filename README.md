@@ -41,50 +41,10 @@ git push -u origin main
 ## Part 2: Execute a GitHub Actions Workflow
 
 * **Create a GitHub Actions workflow file:**
-In the `CI-FullstackApp/.github/workflows` directory,  we have provided a starter file named `starter.yml` .   You will need to complete the workflow based on the following requirements: 
 * Provide a descriptive name for the workflow.
 * The workflow should run on any push to the main branch **and** every Sunday at midnight (0.00). Hint: use the `cron` keyword. Hint: <a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07" target="_blank">check out this documentation.</a>
 * The build job should use a matrix strategy to run on Node.js versions 16.x and 18.x.
 * The workflow steps should include installing dependencies, running tests, and linting. 
 * Print the following message at the completion of the run: "Hello [username of the user who initiated the run]. You pushed to [repository_name] at [date]." Hint: <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#job-context" target="_blank">Check out the official documentation for GitHub Actions variable/context documentation</a>.
 
-### Starter Code for `nodejs.yml`
 
-```
-name: 
-# Ensure the workflow runs on schedule (Sunday at 0:00) and on push to the main branch
-on:
-
-# Use a matrix strategy to use Node.js versions 16.x and 18.x
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-      # Check out the code from the repository.
-      - uses: 
-
-      # Set up a Node.js environment using the specified node version.
-      - uses: 
-        with:
-          node-version: 
-
-      # Install the dependencies.
-      - run: 
-
-      # Run the tests.
-      - run: 
-
-      # Run the linter.
-      - run: 
-
-      # Send a console message at completion.
-      - run: |
-          "Hello [username of the user who initiated the run]. You pushed to [repository_name] at $(date)."."
-
-
-
-```
-
-After pushing your changes, you should be able to see the workflow running in the Actions tab of your GitHub repository. If there are any test failures or lint errors, you'll see them there as well.
