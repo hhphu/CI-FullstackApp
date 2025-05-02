@@ -12,7 +12,7 @@ To ensure quality and avoid deployment of broken code, you have been asked to im
 
 ## Execute a GitHub Actions Workflow
 
-* **Create a GitHub Actions workflow file:**
+* Create a GitHub Actions workflow file
 * Provide a descriptive name for the workflow.
 * The workflow should run on any push to the main branch **and** every Sunday at midnight (0.00). Hint: use the `cron` keyword. Hint: <a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07" target="_blank">check out this documentation.</a>
 * The build job should use a matrix strategy to run on Node.js versions 16.x and 18.x.
